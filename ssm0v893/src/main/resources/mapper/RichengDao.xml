@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.RichengDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.entity.RichengEntity" id="richengMap">
+        <result property="bianhao" column="bianhao"/>
+        <result property="mingcheng" column="mingcheng"/>
+        <result property="fenlei" column="fenlei"/>
+        <result property="neirong" column="neirong"/>
+        <result property="didian" column="didian"/>
+        <result property="shijian" column="shijian"/>
+        <result property="tupian" column="tupian"/>
+        <result property="zhanghao" column="zhanghao"/>
+        <result property="xingming" column="xingming"/>
+    </resultMap>
+
+	<select id="selectListVO"
+		resultType="com.entity.vo.RichengVO" >
+		SELECT * FROM richeng  richeng         
+        <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectVO"
+		resultType="com.entity.vo.RichengVO" >
+		SELECT  richeng.* FROM richeng  richeng
+ 		<where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+
+    <select id="selectListView"
+		resultType="com.entity.view.RichengView" >
+
+		SELECT  richeng.* FROM richeng  richeng 	        
+        <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectView"
+		resultType="com.entity.view.RichengView" >
+		SELECT * FROM richeng  richeng <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	
+</mapper>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.dao.HuimianDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.entity.HuimianEntity" id="huimianMap">
+        <result property="huimianbianhao" column="huimianbianhao"/>
+        <result property="gongzuomingcheng" column="gongzuomingcheng"/>
+        <result property="gongzuoneirong" column="gongzuoneirong"/>
+        <result property="gongzuodidian" column="gongzuodidian"/>
+        <result property="gongzuoshijian" column="gongzuoshijian"/>
+        <result property="huimianshijian" column="huimianshijian"/>
+        <result property="huimiandidian" column="huimiandidian"/>
+        <result property="tupian" column="tupian"/>
+        <result property="zhanghao" column="zhanghao"/>
+        <result property="xingming" column="xingming"/>
+    </resultMap>
+
+	<select id="selectListVO"
+		resultType="com.entity.vo.HuimianVO" >
+		SELECT * FROM huimian  huimian         
+        <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectVO"
+		resultType="com.entity.vo.HuimianVO" >
+		SELECT  huimian.* FROM huimian  huimian
+ 		<where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+
+    <select id="selectListView"
+		resultType="com.entity.view.HuimianView" >
+
+		SELECT  huimian.* FROM huimian  huimian 	        
+        <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	<select id="selectView"
+		resultType="com.entity.view.HuimianView" >
+		SELECT * FROM huimian  huimian <where> 1=1 ${ew.sqlSegment}</where>
+	</select>
+	
+	
+</mapper>

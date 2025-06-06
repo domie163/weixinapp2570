@@ -1,0 +1,87 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/register/register",
+    "pages/forget/forget",
+    "pages/center/center",
+    "pages/user-info/user-info",
+    "pages/yonghu/list",
+    "pages/yonghu/add-or-update",
+    "pages/yonghu/detail",
+    "pages/zhongyaori/list",
+    "pages/zhongyaori/add-or-update",
+    "pages/zhongyaori/detail",
+    "pages/gongzuoricheng/list",
+    "pages/gongzuoricheng/add-or-update",
+    "pages/gongzuoricheng/detail",
+    "pages/huimian/list",
+    "pages/huimian/add-or-update",
+    "pages/huimian/detail",
+    "pages/yongcan/list",
+    "pages/yongcan/add-or-update",
+    "pages/yongcan/detail",
+    "pages/richeng/list",
+    "pages/richeng/add-or-update",
+    "pages/richeng/detail",
+    "pages/zhongyaorizhuanfa/list",
+    "pages/zhongyaorizhuanfa/add-or-update",
+    "pages/zhongyaorizhuanfa/detail",
+    "pages/gongzuorichengzhuanfa/list",
+    "pages/gongzuorichengzhuanfa/add-or-update",
+    "pages/gongzuorichengzhuanfa/detail",
+    "pages/richengzhuanfa/list",
+    "pages/richengzhuanfa/add-or-update",
+    "pages/richengzhuanfa/detail",
+    "pages/index/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "个人日程安排微信小程序",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#D79468",
+    "borderStyle": "white",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/tabs/index.png",
+        "selectedIconPath": "static/tabs/index1.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/zhongyaori/list",
+        "iconPath": "/static/tabs/icon1.png",
+        "selectedIconPath": "/static/tabs/icon1_act.png",
+        "text": "重要日"
+      },
+      {
+        "pagePath": "pages/gongzuoricheng/list",
+        "iconPath": "/static/tabs/icon2.png",
+        "selectedIconPath": "/static/tabs/icon2_act.png",
+        "text": "工作日程"
+      },
+      {
+        "pagePath": "pages/richeng/list",
+        "iconPath": "/static/tabs/icon3.png",
+        "selectedIconPath": "/static/tabs/icon3_act.png",
+        "text": "日程"
+      },
+      {
+        "pagePath": "pages/center/center",
+        "iconPath": "static/tabs/mine.png",
+        "selectedIconPath": "static/tabs/mine1.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "uni-load-more": "/components/mescroll-uni/mescroll-uni",
+    "mescroll-uni": "/components/mescroll-uni/mescroll-uni",
+    "uni-popup": "/components/uni-popup/uni-popup"
+  }
+}
